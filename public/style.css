@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&family=Yeseva+One&display=swap");
+
+:root {
+    padding: 0;
+    margin: 0;
+    font-family: "Yeseva One";
+    --type-color: rgb(97, 255, 97);
+    --flag-color: rgb(255, 97, 97);
+    --color-1: rgb(165, 165, 255);
+    --color-2: rgb(77, 77, 150);
+    --color-3: rgb(115, 115, 255);
+    --color-4: rgb(130, 130, 255);
+    --color-5: rgb(196, 196, 253);
+    background-color: var(--color-1);
+    color: white;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    color: var(--color-2);
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+p {
+    margin: 0.8rem;
+    font-size: 1.4rem;
+}
+
+form {
+    margin-top: 10rem;
+    color: var(--color-2);
+    line-height: 1rem;
+}
+
+main {
+    padding: 15vh;
+    height: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: var(--color-2);
+    line-height: 2rem;
+}
+
+div {
+    font-size: 1.2rem;
+}
+
+span {
+    color: white;
+    font-size: 1.2rem;
+}
+
+form div {
+    display: grid;
+    grid-template-columns: repeat(10, 12vw);
+}
+
+#delivery {
+    font-size: 1.8rem;
+}
+
+.joke {
+    font-family: "Comic Neue";
+}
+
+.center {
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+
+.group {
+    width: 42%;
+    box-shadow: 10px 10px 20px 10px var(--color-3);
+    border-radius: 50px 10px;
+    padding: 2rem;
+    background-color: var(--color-2);
+}
+
+.type {
+    padding: 0.5rem;
+    border: 2px var(--type-color) solid;
+    color: var(--type-color);
+    width: fit-content;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.table-grid {
+    margin-bottom: 2rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 30vw);
+}
+
+#flags {
+    width: 100%;
+    display: inline-flex;
+    flex-flow: row-reverse wrap;
+    text-align: right;
+    column-gap: 0.5rem;
+}
+
+.flag {
+    color: var(--flag-color);
+    border-color: var(--flag-color);
+}
+
+@media only screen and (max-width: 900px) {
+    .group {
+        width: 99%;
+    }
+
+    .center {
+        width: 80%;
+        padding: 5vh;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0.4rem;
+    border-radius: 3rem;
+}
+
+::-webkit-scrollbar-button {
+    background-color: var(--color-5);
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--color-2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-4);
+    border-radius: 3rem;
+    padding: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-3);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--color-2);
+}
